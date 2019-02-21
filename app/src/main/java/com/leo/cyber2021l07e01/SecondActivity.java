@@ -8,17 +8,10 @@ import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private TextView tvOut;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
-        tvOut = findViewById(R.id.tvOut);
-
-        Intent i = getIntent();
-        tvOut.setText(i.getStringExtra("text"));
     }
 
     public void onClick_return(View view) {
